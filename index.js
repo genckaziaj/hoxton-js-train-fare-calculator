@@ -10,12 +10,6 @@ Instructions
    -- Junior passengers (under 18) get a 20% discount
    -- Senior passengers (over 65) get a 40% discount
 - Based on the answers, print a message in the console which tells the user how much they will need to pay for the ride.
-
-Challenge
-Rewrite your program so that the user chooses a starting point and a destination from a list of stations, besides inputting their age, and then get the ticket price. 
-
-You can come up with the stations' names and distances. Try also to code it so that you only need to change the price per km in one place, and all the stations should have the updated price
-
 */
 
 let age = Number(prompt("How old are you?"));
