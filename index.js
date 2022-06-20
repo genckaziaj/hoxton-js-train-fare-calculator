@@ -17,12 +17,16 @@ let distanceTravelling = Number(prompt("How many km are you travelling?"));
 let pricePerTravelledKm = 0.21;
 let priceTravelled = distanceTravelling * pricePerTravelledKm;
 
-if (age > 0 && age < 18) {
-  priceTravelled = priceTravelled - 0.2 * priceTravelled;
-  console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
-} else if (age > 65) {
-  priceTravelled = priceTravelled - 0.4 * priceTravelled;
-  console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
-} else if (age && distanceTravelling) {
-  console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
+function priceToPay() {
+  if (age > 0 && age < 18) {
+    priceTravelled = priceTravelled - 0.2 * priceTravelled;
+    console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
+  } else if (age > 65) {
+    priceTravelled = priceTravelled - 0.4 * priceTravelled;
+    console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
+  } else if (age && distanceTravelling) {
+    console.log(`You will need to pay £${priceTravelled.toFixed(2)}!`);
+  }
 }
+
+priceToPay();
